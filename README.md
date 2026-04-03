@@ -40,3 +40,56 @@ To get this project running locally on your computer, follow these simple steps:
      ```bash
      npm run build
      ```
+
+## How This Project Meets Assignment Requirements
+
+### Dashboard Overview
+- Implemented summary cards: Total Balance, Income, Expenses
+- Time-based chart: Balance & Cash Flow trend
+- Categorical chart: Spending Breakdown (Donut chart)
+
+### Transactions Section
+- Displays transactions with date, amount, category, type
+- Includes search, filtering, and sorting functionality
+
+### Role-Based UI
+- Viewer: can only view data
+- Admin: can add, edit, and delete transactions
+- Role switching implemented via UI
+
+### Insights Section
+- Highest spending category
+- Cash flow insights
+- Category-based observations
+
+### State Management
+- Managed using React Context API and LocalStorage combined with local React component state
+- Seamlessly handles transactions, filters, role, and UI state across reloads
+
+### UI/UX
+- Clean, responsive, enterprise-grade design 
+- Gracefully handles empty states and edge cases
+
+## Tech Stack
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Recharts (for charts)
+- Lucide Icons (for scalable vector graphics)
+
+## Project Structure
+
+```text
+src/
+├── assets/          # Static assets
+├── components/      # Reusable UI components (Sidebar, Tables, Charts, Modals)
+├── context/         # React Context for global state (Auth, Transactions)
+├── data/            # Mock dataset representing DB
+├── utils/           # Utility functions (filtering, sorting, formatting)
+├── App.tsx          # Main application layout structure
+├── main.tsx         # Entry point bridging React to DOM
+├── types.ts         # Global TypeScript interfaces
+└── index.css        # Global stylesheet and Tailwind configs
+```
